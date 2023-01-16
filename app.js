@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 //importing all important modules
 const express = require("express");
 const app = express();
@@ -13,7 +14,7 @@ const flash = require("connect-flash");
 const LocalStratergy = require("passport-local");
 const saltRounds = 10;
 //models
-const { ModelAdmin, model_election, model_questions, model_option, model_voter } = require("./models");
+const { ModelAdmin, model_election, model_voter } = require("./models");
 //using the view engine ejs
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
